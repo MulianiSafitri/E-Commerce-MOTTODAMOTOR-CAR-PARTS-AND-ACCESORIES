@@ -1,0 +1,233 @@
+/* MOTTODA MOTOR Custom CSS */
+:root {
+    --primary-color: #ff0000;
+    /* Bright Red */
+    --primary-dark: #cc0000;
+    --secondary-color: #000000;
+    /* Pure Black */
+    --accent-color: #1a1a1a;
+    /* Off Black */
+    --text-color: #222222;
+    --light-bg: #f8f9fa;
+    /* White/Light Grey */
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+/* Navbar & Header */
+.top-header {
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+    border-bottom: 1px solid #ddd;
+}
+
+.bg-black {
+    background-color: #000000 !important;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 1rem;
+    border-right: 1px solid #333;
+    transition: all 0.3s;
+}
+
+.navbar-nav .nav-link:last-child {
+    border-right: none;
+}
+
+.navbar-nav .nav-link:hover,
+.active-nav {
+    background-color: #1a1a1a;
+    color: var(--primary-color) !important;
+}
+
+.placeholder-white::placeholder {
+    color: white !important;
+    opacity: 0.8;
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: #aeaeae;
+    margin-top: auto;
+    padding: 50px 0 20px;
+    border-top: 5px solid var(--primary-color);
+}
+
+footer h5 {
+    color: var(--white);
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: #aeaeae;
+}
+
+footer a:hover {
+    color: var(--primary-color);
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.text-danger {
+    color: var(--primary-color) !important;
+}
+
+/* Cards & Products */
+.card {
+    border: 1px solid #eee;
+    background-color: var(--white);
+}
+
+.card-product {
+    border: 1px solid #f0f0f0;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    background: var(--white);
+    border-radius: 4px;
+    /* Sharper corners for aggressive look */
+    overflow: hidden;
+    height: 100%;
+}
+
+.card-product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-color: var(--primary-color);
+}
+
+.card-product img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+
+.product-price {
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 1.25rem;
+}
+
+.btn-primary-mottoda {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: var(--white);
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.btn-primary-mottoda:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline-mottoda {
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background: transparent;
+}
+
+.btn-outline-mottoda:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+/* Header / Hero */
+.hero-section {
+    background: transparent;
+    color: var(--text-color);
+    padding: 120px 0;
+    text-align: center;
+    border-bottom: 5px solid var(--primary-color);
+}
+
+.category-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 4px 10px;
+    font-weight: bold;
+    border-radius: 0;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+/* Table overrides */
+.table thead {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(211, 47, 47, 0.05);
+    /* Slight Red Tint */
+}
+
+/* Form Controls */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(211, 47, 47, 0.25);
+}
+
+.badge.bg-danger {
+    background-color: var(--primary-color) !important;
+}
+
+.badge.bg-dark {
+    background-color: var(--secondary-color) !important;
+}
+
+.bg-dark {
+    background-color: var(--secondary-color) !important;
+    color: var(--white);
+}
+
+.text-dark {
+    color: var(--secondary-color) !important;
+}
+
+.bg-light {
+    background-color: #f4f4f4 !important;
+    /* Slightly darker grey to contrast with white cards */
+}
